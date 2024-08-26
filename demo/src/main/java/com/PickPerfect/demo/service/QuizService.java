@@ -16,7 +16,6 @@ import com.PickPerfect.demo.dao.QuizDao;
 import com.PickPerfect.demo.model.Question;
 import com.PickPerfect.demo.model.QuestionWrapper;
 import com.PickPerfect.demo.model.Quiz;
-import com.PickPerfect.demo.model.Response;
 
 @Service
 public class QuizService {
@@ -50,18 +49,65 @@ public class QuizService {
         return new ResponseEntity<>(questionForUser, HttpStatus.OK);
     }
 
-    public ResponseEntity<Integer> calculateResult(Integer id, List<Response> responses) {
-        Quiz quiz = quizDao.findById(id).get();
-        List<Question> questions = quiz.getQuestions();
-        int right = 0; // right answer number
-        int i = 0; // loop counter
-        for (Response response : responses) {
-            if (response.getResponse().equals(questions.get(i).getRightAnswer())) {
-                right++;
+    // public ResponseEntity<Integer> calculateResult(Integer id, List<Response>
+    // responses) {
+    // Quiz quiz = quizDao.findById(id).get();
+    // List<Question> questions = quiz.getQuestions();
+    // int right = 0; // right answer number
+    // int i = 0; // loop counter
+    // for (Response response : responses) {
+    // if (response.getResponse().equals(questions.get(i).getRightAnswer())) {
+    // right++;
+    // }
+    // i++;
+    // }
+    // return new ResponseEntity<>(right, HttpStatus.OK);
+    // }
+
+    // public int calculateResult(List<Question> questions, List<String>
+    // userResponses) {
+    // int correctAnswers = 0;
+
+    // for (int i = 0; i < userResponses.size(); i++) {
+    // String correctAnswer = questions.get(i).getRightAnswer();
+    // if (correctAnswer == null) {
+    // System.out.println("Question ID: " + questions.get(i).getId() + " has a null
+    // rightAnswer");
+    // } else if (correctAnswer.equals(userResponses.get(i))) {
+    // correctAnswers++;
+    // }
+    // // if (questions.get(i).getRightAnswer().equals(userResponses.get(i))) {
+    // // correctAnswers++;
+    // // }
+    // }
+
+    // return correctAnswers;
+    // }
+
+    public int calculateResult(List<Question> questions, List<String> userResponses) {
+        int correctAnswers = 0;
+
+        for (int i = 0; i < userResponses.size(); i++) {
+            if (questions.get(i).getRightAnswer().equals(userResponses.get(i))) {
+                correctAnswers++;
             }
-            i++;
         }
-        return new ResponseEntity<>(right, HttpStatus.OK);
+
+        return correctAnswers;
+    }
+
+    public List<QuestionWrapper> getRandomQuestions(String category, String difficulty, int numQuestions) {
+        List<Question> randomQuestions = questionDao.findRandomQuestionsByCategoryAndDifficulty(category, difficulty,
+                numQuestions);
+        List<QuestionWrapper> questionWrappers = new ArrayList<>();
+
+        for (Question q : randomQuestions) {
+            QuestionWrapper qw = new QuestionWrapper(q.getId(), q.getQuestionTitle(), q.getOption1(), q.getOption2(),
+                    q.getOption3(), q.getOption4());
+            questionWrappers.add(qw);
+        }
+
+        return questionWrappers;
     }
 
 }

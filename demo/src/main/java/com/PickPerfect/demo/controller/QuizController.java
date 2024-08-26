@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.PickPerfect.demo.model.QuestionWrapper;
-import com.PickPerfect.demo.model.Response;
+import com.PickPerfect.demo.model.QuizSubmission;
+import com.PickPerfect.demo.dao.QuestionDao;
+import com.PickPerfect.demo.model.Question;
 import com.PickPerfect.demo.service.QuizService;
 
 @RestController
@@ -22,6 +24,9 @@ public class QuizController {
 
     @Autowired
     QuizService quizService;
+
+    @Autowired
+    QuestionDao questionDao;
 
     @PostMapping("create")
     public ResponseEntity<String> createQuiz(@RequestParam String category, @RequestParam int numQ,
@@ -34,10 +39,24 @@ public class QuizController {
         return quizService.getQuizQuestions(id);
     }
 
-    @PostMapping("submit/{quizId}")
-    public ResponseEntity<Integer> submitQuiz(@PathVariable("quizId") Integer id,
-            @RequestBody List<Response> responses) {
-        return quizService.calculateResult(id, responses);
+    // @PostMapping("submit/{quizId}")
+    // public ResponseEntity<Integer> submitQuiz(@PathVariable("quizId") Integer id,
+    // @RequestBody List<Response> responses) {
+    // return quizService.calculateResult(id, responses);
+    // }
+
+    @PostMapping("submit")
+    public ResponseEntity<Integer> submitQuiz(@RequestBody QuizSubmission quizSubmission) {
+        List<Question> questions = questionDao.findAllById(quizSubmission.getQuestionIds());
+        int score = quizService.calculateResult(questions, quizSubmission.getUserResponses());
+        return ResponseEntity.ok(score);
+    }
+
+    @GetMapping("get-questions")
+    public ResponseEntity<List<QuestionWrapper>> getRandomQuestions(@RequestParam String category,
+            @RequestParam String difficulty) {
+        List<QuestionWrapper> questions = quizService.getRandomQuestions(category, difficulty, 5);
+        return ResponseEntity.ok(questions);
     }
 
 }
