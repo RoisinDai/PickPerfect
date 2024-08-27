@@ -2,12 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -30,11 +24,11 @@ function Home2() {
               </i>
               <br />
               <br />
-              This tool helps you confidently pick the
+              This tool helps you confidently pick the&nbsp;
               <i>
                 <b className="purple">best produce,</b> ensuring every selection
                 is &nbsp;
-                <b className="purple">ripe and ready to enjoy. </b>
+                <b className="purple">ripe and ready to enjoy! </b>
               </i>
               <br />
               <br />
