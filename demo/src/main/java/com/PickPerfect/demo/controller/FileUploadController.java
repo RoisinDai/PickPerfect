@@ -1,5 +1,6 @@
 package com.PickPerfect.demo.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -10,33 +11,53 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.PickPerfect.demo.config.OpenAIConfig;
+
+import java.util.Base64;
 
 @RestController
 @RequestMapping("/api/files")
 public class FileUploadController {
 
+    @Autowired
+    OpenAIConfig openAIConfig;
+
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         try {
-            String apiUrl = "https://api.openai.com/v1/images/generations"; // Replace with the actual API URL
+            String apiUrl = "https://api.openai.com/v1/chat/completions"; // From ChatGPT Vision API
 
-            // Prepare the file to be sent
-            Map<String, Object> body = new HashMap<>();
-            body.put("file", file.getResource());
+            // Convert the uploaded file to Base64 format
+            String base64Image = Base64.getEncoder().encodeToString(file.getBytes());
 
-            // Add headers if needed, such as authorization
+            // Prepare the payload to the API
+            String payload = "{"
+                    + "\"model\":\"gpt-4o-mini\","
+                    + "\"messages\":["
+                    + "{"
+                    + "\"role\":\"user\","
+                    + "\"content\":["
+                    + "{\"type\":\"text\",\"text\":\"Identify the fruit or vegetable in this image and tell me how to pick a good one. If the image contains multiple fruits, analyze the image to suggest which one is the best pick. If the image is not a fruit or vegetable, respond with {\\\"valid\\\":false}. If it is valid, respond in the following format: {\\\"valid\\\":true, \\\"name\\\":\\\"name\\\", \\\"how_to_pick\\\": [\\\"instruction1\\\", \\\"instruction2\\\", ...], \\\"best_pick\\\":\\\"description\\\"}\"}"
+                    + "{\"type\":\"image_url\",\"image_url\":{\"url\":\"data:image/jpeg;base64," + base64Image
+                    + "\", \"detail\":\"low\"}}"
+                    + "]"
+                    + "}"
+                    + "],"
+                    + "\"max_tokens\":300"
+                    + "}";
+
+            // Prepare headers
             HttpHeaders headers = new HttpHeaders();
-            headers.add("Authorization", "Bearer YOUR_API_KEY");
+            headers.add("Authorization", "Bearer " + openAIConfig.getOpenaiApiKey());
+            headers.add("Content-Type", "application/json");
 
-            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(body, headers);
+            HttpEntity<String> entity = new HttpEntity<>(payload, headers);
 
-            // Send the file to the external API
+            // Send the request to OpenAI API
             RestTemplate restTemplate = new RestTemplate();
             ResponseEntity<String> response = restTemplate.postForEntity(apiUrl, entity, String.class);
 
-            // Return the API response
+            // return the response
             return ResponseEntity.ok(response.getBody());
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error uploading file: " + e.getMessage());
