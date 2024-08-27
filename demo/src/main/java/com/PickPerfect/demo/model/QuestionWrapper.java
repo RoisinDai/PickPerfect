@@ -11,7 +11,7 @@ public class QuestionWrapper {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
-    private String questionTitle; // question_title
+    private String questionTitle;
     private String option1;
     private String option2;
     private String option3;

@@ -23,23 +23,30 @@ public class FileUploadController {
     OpenAIConfig openAIConfig;
 
     @PostMapping("/upload")
-    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> uploadFile(
+            @RequestParam(value = "file", required = false) MultipartFile file,
+            @RequestParam(value = "question", required = false) String question) {
         try {
             String apiUrl = "https://api.openai.com/v1/chat/completions"; // From ChatGPT Vision API
 
-            // Convert the uploaded file to Base64 format
-            String base64Image = Base64.getEncoder().encodeToString(file.getBytes());
+            StringBuilder contentBuilder = new StringBuilder();
+            if (question != null && !question.isEmpty()) {
+                contentBuilder.append("{\"type\":\"text\",\"text\":\"").append(question).append("\"},");
+            }
+            if (file != null) {
+                String base64Image = Base64.getEncoder().encodeToString(file.getBytes());
+                contentBuilder.append("{\"type\":\"image_url\",\"image_url\":{\"url\":\"data:image/jpeg;base64,")
+                        .append(base64Image).append("\", \"detail\":\"low\"}}");
+            }
 
-            // Prepare the payload to the API
             String payload = "{"
                     + "\"model\":\"gpt-4o-mini\","
                     + "\"messages\":["
                     + "{"
                     + "\"role\":\"user\","
                     + "\"content\":["
-                    + "{\"type\":\"text\",\"text\":\"Identify the fruit or vegetable in this image and tell me how to pick a good one. If the image contains multiple fruits, analyze the image to suggest which one is the best pick. If the image is not a fruit or vegetable, respond with {\\\"valid\\\":false}. If it is valid, respond in the following format: {\\\"valid\\\":true, \\\"name\\\":\\\"name\\\", \\\"how_to_pick\\\": [\\\"instruction1\\\", \\\"instruction2\\\", ...], \\\"best_pick\\\":\\\"description\\\"}\"}"
-                    + "{\"type\":\"image_url\",\"image_url\":{\"url\":\"data:image/jpeg;base64," + base64Image
-                    + "\", \"detail\":\"low\"}}"
+                    + "{\"type\":\"text\",\"text\":\"Identify the fruit or vegetable in this image and tell me how to pick a good one. If the image contains multiple fruits, analyze the image to suggest which one is the best pick. If the image is not a fruit or vegetable, respond with the format: {\\\"valid\\\":false}. If it is valid, respond in the following format: {\\\"valid\\\":true, \\\"name\\\":\\\"name\\\", \\\"how_to_pick\\\": [\\\"instruction1\\\", \\\"instruction2\\\", ...], \\\"best_pick\\\":\\\"description\\\"}\"},"
+                    + contentBuilder.toString()
                     + "]"
                     + "}"
                     + "],"
