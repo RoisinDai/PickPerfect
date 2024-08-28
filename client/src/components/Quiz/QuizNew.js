@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import axios from "axios";
-import Particle from "../Particle";
-import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import broccoliImage from "../../Assets/fruits/broccoli.png";
@@ -97,7 +95,6 @@ function Quiz() {
               style={{
                 borderRadius: "15px",
                 padding: "20px",
-                // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                 maxWidth: "700px",
                 margin: "auto",
               }}
@@ -188,6 +185,7 @@ function Quiz() {
                       }
                       style={{
                         color: "#657B3E",
+                        border: "2px solid #657B3E !important",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",

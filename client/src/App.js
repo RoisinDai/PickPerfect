@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import FileUpload from "./components/FileUpload/FileUpload";
 import Footer from "./components/Footer";
 import {
@@ -37,7 +36,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/upload" element={<FileUpload />} />
-          <Route path="/about" element={<About />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
