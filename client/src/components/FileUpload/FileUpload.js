@@ -10,6 +10,9 @@ function FileUpload() {
     "Ask a question in the box below and/or upload an image to begin!"
   );
   const [parsedMsg, setParsedMsg] = useState(null);
+  const [showEmailField, setShowEmailField] = useState(false);
+  const [email, setEmail] = useState("");
+  const [emailStatus, setEmailStatus] = useState("");
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -82,6 +85,33 @@ function FileUpload() {
     setTomatoMessage(
       "Ask a question in the box below and/or upload an image to begin!"
     );
+    setShowEmailField(false);
+    setEmail("");
+    setEmailStatus("");
+  };
+
+  const handleEmailRequest = () => {
+    setShowEmailField(true);
+  };
+
+  const handleSendEmail = async () => {
+    if (!email) {
+      setEmailStatus("Please enter a valid email address.");
+      return;
+    }
+
+    const responseContentString = JSON.stringify(parsedMsg);
+
+    try {
+      await axios.post("http://localhost:8080/api/send-email", {
+        email: email,
+        response: responseContentString,
+      });
+      setEmailStatus("Email sent successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setEmailStatus("Failed to send email.");
+    }
   };
 
   return (
@@ -305,6 +335,7 @@ function FileUpload() {
               display: "flex",
               justifyContent: "center",
               marginTop: "20px",
+              gap: "40px",
             }}
           >
             <button
@@ -319,7 +350,70 @@ function FileUpload() {
             >
               Try Again
             </button>
+            <button
+              onClick={handleEmailRequest}
+              style={{
+                padding: "10px 20px",
+                fontSize: "16px",
+                borderRadius: "50px",
+                backgroundColor: "#CCD5AE",
+                color: "#657B3E",
+              }}
+            >
+              Send Me an Email
+            </button>
           </div>
+
+          {showEmailField && (
+            <div
+              style={{
+                marginTop: "20px",
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                style={{
+                  width: "100%",
+                  padding: "10px",
+                  borderRadius: "10px",
+                  border: "2px solid #657B3E",
+                  fontSize: "16px",
+                  marginBottom: "10px",
+                }}
+              />
+              <button
+                onClick={handleSendEmail}
+                style={{
+                  padding: "10px 20px",
+                  fontSize: "16px",
+                  borderRadius: "50px",
+                  backgroundColor: "#657B3E",
+                  color: "#FDF9DE",
+                }}
+              >
+                Send Email
+              </button>
+              {emailStatus && (
+                <p
+                  style={{
+                    color: emailStatus.includes("successfully")
+                      ? "#28a745"
+                      : "#dc3545",
+                    marginTop: "10px",
+                  }}
+                >
+                  {emailStatus}
+                </p>
+              )}
+            </div>
+          )}
         </>
       )}
 

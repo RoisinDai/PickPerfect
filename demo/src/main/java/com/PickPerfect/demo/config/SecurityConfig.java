@@ -40,15 +40,15 @@ public class SecurityConfig {
         return http
                 .csrf(customizer -> customizer.disable())
                 // .cors().disable()
-                .authorizeHttpRequests(request -> request
-                        .requestMatchers("/register", "/login")
-                        .permitAll()
-                        // .requestMatchers("/images/**", "/css/**", "/js/**",
-                        // "/WEB-INF/views/**")
-                        // .permitAll()
-                        // .requestMatchers("/sw.js").permitAll()
-                        // .dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
-                        .anyRequest().authenticated())
+                // .authorizeHttpRequests(request -> request
+                // .requestMatchers("/register", "/login")
+                // .permitAll()
+                // // .requestMatchers("/images/**", "/css/**", "/js/**",
+                // // "/WEB-INF/views/**")
+                // // .permitAll()
+                // // .requestMatchers("/sw.js").permitAll()
+                // // .dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
+                // .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
