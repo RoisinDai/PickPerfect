@@ -3,6 +3,7 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
+import Register from "./components/Login/Register";
 import FileUpload from "./components/FileUpload/FileUpload";
 import Footer from "./components/Footer";
 import {
@@ -32,15 +33,20 @@ function AppContent() {
   return (
     <div className="App" id={load ? "no-scroll" : "scroll"}>
       <Preloader load={load} />
-      {location.pathname !== "/login" && <Navbar />}
+      {location.pathname !== "/login" && location.pathname !== "/register" && (
+        <Navbar />
+      )}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/upload" element={<FileUpload />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
-      {location.pathname !== "/login" && <Footer />}
+      {location.pathname !== "/login" && location.pathname !== "/register" && (
+        <Footer />
+      )}
     </div>
   );
 }
