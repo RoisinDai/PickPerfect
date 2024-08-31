@@ -200,3 +200,33 @@
 2024-08-31T00:11:15.690-07:00 TRACE 99902 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
 2024-08-31T00:11:15.691-07:00 DEBUG 99902 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
 2024-08-31T00:11:15.693-07:00 TRACE 99902 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-08-31T00:16:37.200-07:00  INFO 99902 --- [restartedMain] com.PickPerfect.demo.DemoApplication     : Starting DemoApplication using Java 17.0.8.1 with PID 99902 (/Users/roisin/Documents/New PickPerfect/demo/target/classes started by roisin in /Users/roisin/Documents/New PickPerfect)
+2024-08-31T00:16:37.201-07:00  INFO 99902 --- [restartedMain] com.PickPerfect.demo.DemoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-08-31T00:16:37.337-07:00  INFO 99902 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-31T00:16:37.344-07:00  INFO 99902 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2024-08-31T00:16:37.463-07:00  INFO 99902 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-31T00:16:37.464-07:00  INFO 99902 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-31T00:16:37.464-07:00  INFO 99902 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-31T00:16:37.480-07:00  INFO 99902 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-31T00:16:37.480-07:00  INFO 99902 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 278 ms
+2024-08-31T00:16:37.521-07:00  INFO 99902 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-31T00:16:37.524-07:00  INFO 99902 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-31T00:16:37.533-07:00  INFO 99902 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-31T00:16:37.533-07:00  INFO 99902 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-31T00:16:37.572-07:00  INFO 99902 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5929b6a9
+2024-08-31T00:16:37.573-07:00  INFO 99902 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-31T00:16:37.580-07:00  WARN 99902 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-31T00:16:37.659-07:00  INFO 99902 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-31T00:16:37.716-07:00  INFO 99902 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-31T00:16:37.767-07:00 TRACE 99902 --- [restartedMain] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {securityConfig=com.PickPerfect.demo.config.SecurityConfig$$SpringCGLIB$$0@72642315}
+2024-08-31T00:16:37.768-07:00  INFO 99902 --- [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-31T00:16:37.768-07:00  WARN 99902 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-31T00:16:37.779-07:00  WARN 99902 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-31T00:16:37.785-07:00  INFO 99902 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-31T00:16:37.811-07:00 DEBUG 99902 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter
+2024-08-31T00:16:37.844-07:00  INFO 99902 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-31T00:16:37.849-07:00  INFO 99902 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-31T00:16:37.850-07:00  INFO 99902 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-08-31T00:16:38.116-07:00  INFO 99902 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#544d8549:0/SimpleConnection@59ecaf57 [delegate=amqp://guest@127.0.0.1:5672/, localPort=50518]
+2024-08-31T00:16:38.127-07:00  INFO 99902 --- [restartedMain] com.PickPerfect.demo.DemoApplication     : Started DemoApplication in 0.952 seconds (process running for 2764.969)
+2024-08-31T00:16:38.128-07:00  INFO 99902 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
