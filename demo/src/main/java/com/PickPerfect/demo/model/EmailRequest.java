@@ -6,7 +6,6 @@ public class EmailRequest implements Serializable {
     private String email;
     private String response;
 
-    // Getters and Setters
     public String getEmail() {
         return email;
     }
