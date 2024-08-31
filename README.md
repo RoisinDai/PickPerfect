@@ -1,6 +1,6 @@
 # PickPerfect 🍎🥑
 
-![Tomato](https://github.com/user-attachments/assets/4ab455c5-0e94-455f-8791-4b14c2d313af)
+<img src="https://github.com/user-attachments/assets/b30cb5fb-5bca-4591-ab5b-37b00e68060c" alt="Custom Size 3" width="300"/>
 
 ## Overview
 
