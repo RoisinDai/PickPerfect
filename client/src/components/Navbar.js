@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import LogoutButton from "../components/Login/Logout";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -79,6 +80,9 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Quiz
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <LogoutButton />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

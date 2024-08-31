@@ -20,7 +20,7 @@ function Login() {
         username: username,
         password: password,
       });
-
+      localStorage.setItem("token", response.data.token);
       navigate("/");
       console.log("Response:", response.data);
     } catch (error) {
@@ -31,6 +31,8 @@ function Login() {
 
   const onSuccess = (res) => {
     console.log("LOGIN SUCCESS! Current user: ", res.profileObj);
+    const token = res.credential;
+    localStorage.setItem("googleToken", token);
     navigate("/");
   };
 
