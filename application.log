@@ -34,3 +34,723 @@
 2024-09-03T00:20:38.761-04:00  INFO 7423 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#53881d72:0/SimpleConnection@68e54c80 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56929]
 2024-09-03T00:20:38.771-04:00  INFO 7423 --- [restartedMain] com.PickPerfect.demo.DemoApplication     : Started DemoApplication in 1.269 seconds (process running for 3327.708)
 2024-09-03T00:20:38.772-04:00  INFO 7423 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T00:30:22.178-04:00  INFO 7423 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03T00:30:22.184-04:00  INFO 7423 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-03T00:30:22.212-04:00  INFO 7423 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2024-09-03T00:30:22.229-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:22.230-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:30:22.230-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:22.230-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:22.230-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:22.231-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:22.231-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:22.232-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:22.232-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:22.233-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:22.233-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:22.233-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:22.233-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:22.233-04:00 TRACE 7423 --- [http-nio-8080-exec-1] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:22.234-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:22.234-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:22.234-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:22.234-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:30:22.264-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:25.443-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /static/css/main.31812695.css.map
+2024-09-03T00:30:25.443-04:00 DEBUG 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /static/js/main.e4b420e2.js.map
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:25.443-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:25.444-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:25.445-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /static/css/main.31812695.css.map
+2024-09-03T00:30:25.444-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:25.445-04:00 TRACE 7423 --- [http-nio-8080-exec-3] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:25.446-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:25.446-04:00 DEBUG 7423 --- [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:25.446-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:25.446-04:00 DEBUG 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /static/js/main.e4b420e2.js.map
+2024-09-03T00:30:25.449-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:25.450-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:27.790-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:27.790-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:27.791-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:27.791-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-03T00:30:27.814-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:27.817-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:27.817-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:27.817-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-03T00:30:27.862-04:00 TRACE 7423 --- [http-nio-8080-exec-6] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:27.862-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.149-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.149-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-09-03T00:30:33.149-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.150-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.151-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.151-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.151-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-09-03T00:30:33.162-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.163-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /index.html
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.163-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.163-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /index.html
+2024-09-03T00:30:33.165-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.165-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.220-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.221-04:00 DEBUG 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /static/js/main.e4b420e2.js
+2024-09-03T00:30:33.221-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.221-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.221-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.221-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.222-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /static/css/main.31812695.css
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.222-04:00 DEBUG 7423 --- [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.222-04:00 DEBUG 7423 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /static/js/main.e4b420e2.js
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.222-04:00 TRACE 7423 --- [http-nio-8080-exec-9] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.223-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.223-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.223-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.223-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /static/css/main.31812695.css
+2024-09-03T00:30:33.224-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.224-04:00 TRACE 7423 --- [http-nio-8080-exec-8] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.279-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.279-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.280-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.280-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.280-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:30:33.281-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.282-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.282-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /static/media/pre.8fbf015487160aa5ef25.svg
+2024-09-03T00:30:33.282-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.282-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.282-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.283-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.284-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.284-04:00 DEBUG 7423 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /static/media/pre.8fbf015487160aa5ef25.svg
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.284-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /static/media/Ultra-Regular.4477576cb388530563cf.ttf
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.284-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.284-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.285-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /static/media/Ultra-Regular.4477576cb388530563cf.ttf
+2024-09-03T00:30:33.286-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.742-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.742-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:30:33.743-04:00 DEBUG 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /manifest.json
+2024-09-03T00:30:33.743-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /favicon.png
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:30:33.743-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.744-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.744-04:00 TRACE 7423 --- [http-nio-8080-exec-3] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:30:33.745-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:30:33.745-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:30:33.745-04:00 DEBUG 7423 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /manifest.json
+2024-09-03T00:30:33.745-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /favicon.png
+2024-09-03T00:30:33.748-04:00 TRACE 7423 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:30:33.748-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:00.858-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:00.860-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /static/media/broccoli.613081019e6ec3952007081e6942a577.svg
+2024-09-03T00:31:00.860-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:00.860-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:00.861-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:00.861-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:00.861-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:00.861-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:00.861-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:00.862-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:00.862-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:00.863-04:00 DEBUG 7423 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /static/media/broccoli.613081019e6ec3952007081e6942a577.svg
+2024-09-03T00:31:00.867-04:00 TRACE 7423 --- [http-nio-8080-exec-9] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:16.812-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:16.813-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:16.813-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:16.814-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:16.814-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:16.814-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:31:16.816-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:20.129-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:20.129-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-09-03T00:31:20.130-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:20.130-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:20.130-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:20.130-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:20.130-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:20.131-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:20.132-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:20.132-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:20.132-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /login
+2024-09-03T00:31:20.158-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.authentication.ProviderManager     : Authenticating request with DaoAuthenticationProvider (1/1)
+2024-09-03T00:31:20.511-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-09-03T00:31:20.888-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'roisin'
+2024-09-03T00:31:20.891-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Sending to authentication entry point since authentication failed
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:141) ~[spring-security-core-6.3.3.jar:6.3.3]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.3.3.jar:6.3.3]
+	at com.PickPerfect.demo.service.UserService.verify(UserService.java:33) ~[classes/:na]
+	at com.PickPerfect.demo.controller.UserController.login(UserController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.PickPerfect.demo.config.JwtFilter.doFilterInternal(JwtFilter.java:56) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-09-03T00:31:20.897-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-09-03T00:31:20.897-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:20.898-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:20.898-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:20.898-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /error
+2024-09-03T00:31:20.900-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:20.900-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:27.729-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:27.730-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:27.731-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:27.732-04:00 TRACE 7423 --- [http-nio-8080-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:27.732-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:27.732-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:27.732-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:27.732-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /login
+2024-09-03T00:31:27.733-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.authentication.ProviderManager     : Authenticating request with DaoAuthenticationProvider (1/1)
+2024-09-03T00:31:27.734-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-09-03T00:31:28.033-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-09-03T00:31:28.035-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:28.060-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /static/media/home-bg.dc52d5d40a40b13154b0.jpg
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:28.060-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:28.061-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:28.061-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:28.061-04:00 DEBUG 7423 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /static/media/home-bg.dc52d5d40a40b13154b0.jpg
+2024-09-03T00:31:28.062-04:00 TRACE 7423 --- [http-nio-8080-exec-6] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:28.079-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:28.079-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:28.079-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /static/media/avatar.e336ec04c5352e0841aa04ceeb5350ae.svg
+2024-09-03T00:31:28.080-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /static/media/home-main.e9e7514456b0ad8d7ee395e9131df5c5.svg
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:28.080-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-7] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-4] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:28.081-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:28.081-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:28.081-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:28.081-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /static/media/home-main.e9e7514456b0ad8d7ee395e9131df5c5.svg
+2024-09-03T00:31:28.081-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /static/media/avatar.e336ec04c5352e0841aa04ceeb5350ae.svg
+2024-09-03T00:31:28.082-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:28.082-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:31:59.440-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:31:59.441-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:31:59.441-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:31:59.442-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:31:59.442-04:00 TRACE 7423 --- [http-nio-8080-exec-10] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:31:59.442-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:31:59.442-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:31:59.442-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:31:59.442-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:31:59.456-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:32:42.320-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:32:42.322-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/files/upload
+2024-09-03T00:32:42.322-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:32:42.322-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:32:42.323-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:32:42.324-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:32:42.324-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:32:42.324-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:32:42.324-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/files/upload
+2024-09-03T00:32:49.563-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:33:33.846-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:33:33.847-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/files/upload
+2024-09-03T00:33:33.847-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:33:33.847-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:33:33.848-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:33:33.849-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:33:33.849-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:33:33.849-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/files/upload
+2024-09-03T00:33:35.515-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:33:44.404-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:33:44.404-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:33:44.405-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /static/media/pineapple.2c99a8c7f2058cd41d12.png
+2024-09-03T00:33:44.405-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /static/media/broccoli.7e69f5029be185ecc083.png
+2024-09-03T00:33:44.405-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:33:44.405-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:33:44.405-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:33:44.405-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:33:44.406-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:33:44.406-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:33:44.406-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:33:44.406-04:00 DEBUG 7423 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /static/media/broccoli.7e69f5029be185ecc083.png
+2024-09-03T00:33:44.406-04:00 DEBUG 7423 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /static/media/pineapple.2c99a8c7f2058cd41d12.png
+2024-09-03T00:33:44.411-04:00 TRACE 7423 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:33:44.411-04:00 TRACE 7423 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:34:05.901-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:34:05.902-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /quiz/get-questions?category=fruit&difficulty=Easy
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:34:05.902-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:34:05.903-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:34:05.904-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:34:05.904-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:34:05.904-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:34:05.904-04:00 TRACE 7423 --- [http-nio-8080-exec-10] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:34:05.906-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:34:05.906-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:34:05.906-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:34:05.906-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /quiz/get-questions?category=fruit&difficulty=Easy
+2024-09-03T00:34:05.929-04:00 DEBUG 7423 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    SELECT
+        * 
+    FROM
+        question q 
+    WHERE
+        q.category = ? 
+        AND q.difficultylevel = ? 
+    ORDER BY
+        RANDOM() 
+    LIMIT
+        ?
+2024-09-03T00:34:05.979-04:00 TRACE 7423 --- [http-nio-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:34:21.739-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:34:21.740-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /quiz/submit
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:34:21.740-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:34:21.741-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:34:21.741-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:34:21.741-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /quiz/submit
+2024-09-03T00:34:21.776-04:00 DEBUG 7423 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        q1_0.id,
+        q1_0.category,
+        q1_0.difficultylevel,
+        q1_0.option1,
+        q1_0.option2,
+        q1_0.option3,
+        q1_0.option4,
+        q1_0.question_title,
+        q1_0.right_answer 
+    from
+        question q1_0 
+    where
+        q1_0.id in (?, ?, ?, ?)
+2024-09-03T00:34:21.782-04:00 TRACE 7423 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-09-03T00:36:51.938-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@45270e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4be0e889, org.springframework.security.web.context.SecurityContextHolderFilter@660ce3cf, org.springframework.security.web.header.HeaderWriterFilter@369531c2, org.springframework.security.web.authentication.logout.LogoutFilter@fc3027f, com.PickPerfect.demo.config.JwtFilter@6c498d6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f4bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bb6a95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fdf652d, org.springframework.security.web.session.SessionManagementFilter@2ea8bdd4, org.springframework.security.web.access.ExceptionTranslationFilter@662ba463]] (1/1)
+2024-09-03T00:36:51.940-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:36:51.941-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-09-03T00:36:51.941-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-09-03T00:36:51.941-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-09-03T00:36:51.941-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-09-03T00:36:51.941-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking JwtFilter (6/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/11)
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-09-03T00:36:51.942-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id BAA7C0912570561F4C68019AF2D4D661
+2024-09-03T00:36:51.942-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/11)
+2024-09-03T00:36:51.942-04:00 DEBUG 7423 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /static/media/tomato.c5a20a5abc96f3665c5176ed35e68f9c.svg
+2024-09-03T00:36:51.947-04:00 TRACE 7423 --- [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
