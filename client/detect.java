@@ -6,12 +6,12 @@ public class Detect {
         System.out.println("This is a large Java file.");
 
         // Generate a lot of output or perform a large number of operations
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             System.out.println("Line " + i + ": This is a filler line to increase the size of this Java file.");
         }
 
         // Create a large array and fill it with data
-        int[] largeArray = new int[10000];
+        int[] largeArray = new int[1000000];
         for (int i = 0; i < largeArray.length; i++) {
             largeArray[i] = i;
         }
@@ -29,7 +29,7 @@ public class Detect {
 
     public static void performComplexLogic() {
         // Create large methods with lots of content
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100000; i++) {
             System.out.println("Complex logic iteration: " + i);
         }
     }
@@ -37,7 +37,7 @@ public class Detect {
     public static String generateLargeString() {
         StringBuilder largeString = new StringBuilder(
                 "This is a very large string to take up space in this Java file.");
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100000; i++) {
             largeString.append(" More text to increase file size.");
         }
         return largeString.toString();
@@ -45,19 +45,19 @@ public class Detect {
 
     public static void additionalFiller() {
         // Add more filler content to make the file even larger
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100000; i++) {
             System.out.println("Filler code line " + i + ": Adding more lines to increase the size of this file.");
         }
 
         // More large arrays
-        double[] largeDoubleArray = new double[10000];
+        double[] largeDoubleArray = new double[100000];
         for (int i = 0; i < largeDoubleArray.length; i++) {
             largeDoubleArray[i] = i * 0.01;
         }
 
         // Large nested loops
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 100; j++) {
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < 1000; j++) {
                 System.out.println("Nested loop iteration: i=" + i + ", j=" + j);
             }
         }
