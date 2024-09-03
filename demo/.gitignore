@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignore application.properties file. There are lots of secrets in there!
+/src/main/resources/application.properties
+
+# Ignore log files
+application.log
+application.log.*.gz
+
