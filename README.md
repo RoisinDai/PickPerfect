@@ -25,6 +25,7 @@
 - **Email Service**: Jakarta Email Service
 
 ## Awesome Demo Video!
+https://youtu.be/9KjmqKV6a0M
 
 ## Images for PickPerfect!
 **JWT authenticated login**:
