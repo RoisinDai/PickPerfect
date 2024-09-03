@@ -27,3 +27,11 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+
+
+# Ignore log files
+application.log
+application.log.*.gz
+
+# Ignore application.properties file. There are lots of secrets in there!
+/src/main/resources/application.properties
