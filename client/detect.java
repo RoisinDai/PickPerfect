@@ -1,4 +1,4 @@
-/* This file is to help github detect that this is a JAVA springboot project. For some reasons its been unable to do so. */
+/* This file is to help github display that this is a JAVA springboot project. For some reasons its been unable to do so. */
 
 public class Detect {
 
